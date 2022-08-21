@@ -1,0 +1,44 @@
+attributes:
+- beginString: (?<=TRACK \d{0,3} )[A-Z]+
+  regularExpression: true
+characters: []
+commands: []
+commentDelimiters: {}
+comments: []
+completions: []
+extensions: []
+filenames: []
+interpreters: []
+keywords:
+- beginString: CATALOG
+- beginString: CDTEXTFILE
+- beginString: FILE
+- beginString: FLAGS
+- beginString: INDEX
+- beginString: ISRC
+- beginString: PERFORMER
+- beginString: POSTGAP
+- beginString: PREGAP
+- beginString: REM
+- beginString: SONGWRITER
+- beginString: TITLE
+- beginString: TRACK
+metadata: {}
+numbers:
+- beginString: \d\d+(:\d\d){2}
+  regularExpression: true
+outlineMenu:
+- beginString: TITLE "(.+)"
+  keyString: '    $1'
+- beginString: TRACK (\d+)
+  bold: true
+  keyString: Track $1
+strings:
+- endString: '"'
+types:
+- beginString: (?<=REM )[A-Z]+
+  regularExpression: true
+values:
+- beginString: \d
+  regularExpression: true
+variables: []
